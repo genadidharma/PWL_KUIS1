@@ -415,6 +415,10 @@ https://templatemo.com/tm-538-digital-trend
     padding-left: 5px;
   }
 
+  .card-info{
+    padding: 16px;
+  }
+
   .owl-theme .owl-dots .owl-dot {
     outline: none;
   }
@@ -673,6 +677,12 @@ https://templatemo.com/tm-538-digital-trend
       margin-top: 3em;
       padding: 0;
       text-align: left;
+    }
+
+    .card-info {
+      right: 0;
+      left: 0;
+      margin: 0 auto;
     }
   }
 
