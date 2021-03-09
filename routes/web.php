@@ -1,5 +1,13 @@
 <?php
 
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\GoodsController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\SupplierController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +21,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/project/{slug}', [ProjectController::class, 'show'])->name('project-detail');
+Route::get('/blog', [BlogController::class, 'index'])->name('blog');
+Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog-detail');
+Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+
+Route::get('/goods', [GoodsController::class, 'index'])->name('goods');
+Route::get('/customer', [CustomerController::class, 'index'])->name('customer');
+Route::get('/employee', [EmployeeController::class, 'index'])->name('employee');
+Route::get('/supplier', [SupplierController::class, 'index'])->name('supplier');
+
