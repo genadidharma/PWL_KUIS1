@@ -419,6 +419,10 @@ https://templatemo.com/tm-538-digital-trend
     padding: 16px;
   }
 
+  .customer-info{
+    width: auto;
+  }
+
   .owl-theme .owl-dots .owl-dot {
     outline: none;
   }
