@@ -22,7 +22,7 @@ class GoodsFactory extends Factory
     public function definition()
     {
         return [
-            'image' => $this->faker->image('public/images/goods', 640, 480, 'business'),
+            'image' => $this->faker->imageUrl(640, 480, 'business'),
             'category' => $this->faker->company,
             'name' => $this->faker->text(15),
             'price' => $this->faker->numberBetween(15, 100)

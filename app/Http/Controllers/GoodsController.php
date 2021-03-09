@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\Goods;
 
 class GoodsController extends Controller
 {
     public function index(){
-        return view('goods');
+        $goods = Goods::goods();
+        return view('goods', compact('goods'));
     }
 }
