@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class SupplierController extends Controller
 {
     public function index(){
-        echo 'Supplier';
+        return view('supplier');
     }
 }

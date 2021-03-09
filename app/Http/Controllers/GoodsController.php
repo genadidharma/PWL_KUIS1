@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class GoodsController extends Controller
 {
     public function index(){
-        echo 'Goods';
+        return view('goods');
     }
 }
