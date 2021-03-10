@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\BlogDetailController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\EmployeeController;
@@ -24,7 +25,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/project/{slug}', [ProjectController::class, 'show'])->name('project-detail');
 Route::get('/blog', [BlogController::class, 'index'])->name('blog');
-Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog-detail');
+Route::get('/blog/{slug}', [BlogDetailController::class, 'show'])->name('blog-detail');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 
 Route::get('/goods', [GoodsController::class, 'index'])->name('goods');
