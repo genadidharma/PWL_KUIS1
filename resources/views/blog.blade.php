@@ -29,9 +29,9 @@
                     <img src="{{asset($blog->image)}}" class="img-fluid" alt="blog">
 
                     <div class="blog-info">
-                      <h4 class="blog-category text-danger">{{$header->category}}</h4>
+                      <h4 class="blog-category text-danger">{{$blog->category}}</h4>
 
-                      <h3><a href="{{route('blog-detail', ['slug' => $header -> slug])}}">{{$header->title}}</a></h3>
+                      <h3><a href="{{route('blog-detail', ['slug' => $blog -> slug])}}">{{$blog->title}}</a></h3>
                     </div>
                   </div>    
                 @endforeach
