@@ -10,12 +10,12 @@ class Blog extends Model
     use HasFactory;
 
     public static function blogs(){
-        return Project::orderBy('category')
+        return Blog::orderBy('category')
             ->get();
     }
 
     public static function getProjectBySlug($slug){
-        return Project::where('slug', $slug)
+        return Blog::where('slug', $slug)
             ->first();
     }
 }
