@@ -13,7 +13,7 @@
       @foreach ($employee as $employee)
           <div class="col-lg-2 mr-auto mt-3 col-md-5 col-12">
             <div class="contact-image" data-aos="fade-up">
-              <img src="{{asset($employee->image)}}" class="img-fluid" alt="website">
+              <img src="{{asset($employee->image)}}" class="img-fluid" alt="project image">
             </div>
           </div>
   
