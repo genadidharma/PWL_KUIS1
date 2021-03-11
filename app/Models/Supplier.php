@@ -7,5 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Supplier extends Model
 {
+    public $table = "supplier";
     use HasFactory;
+
+    public static function supplier() {
+        return Supplier::orderBy('name')
+            ->get();
+    }
 }
