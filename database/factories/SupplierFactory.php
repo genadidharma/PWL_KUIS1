@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Employee;
+use App\Models\Supplier;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class EmployeeFactory extends Factory
+class SupplierFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Employee::class;
+    protected $model = Supplier::class;
 
     /**
      * Define the model's default state.
@@ -23,8 +23,8 @@ class EmployeeFactory extends Factory
     {
         return [
             'image' => $this->faker->imageUrl(640, 480, 'people'),
-            'name' => $this->faker->text(15),
-            'nip' => $this->faker->bothify('?###??##')
+            'name' => $this->faker->name,
+            'address' => $this->faker->streetAddress
         ];
     }
 }
