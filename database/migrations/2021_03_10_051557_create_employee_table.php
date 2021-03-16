@@ -17,7 +17,7 @@ class CreateEmployeeTable extends Migration
             $table->id();
             $table->text('image');
             $table->string('name', 50);
-            $table->string('nip', 100);
+            $table->string('nip', 10);
             $table->timestamps();
         });
     }
